@@ -30,7 +30,7 @@ export function* getSnapshotFromUserAuth(userAuth, additionalData) {
 
 export function* isUserAuthenticated() {
     try {
-        const userAuth = getCurrentUser();
+        const userAuth = yield getCurrentUser();
         console.log(userAuth)
         if (!userAuth) return;
         yield getSnapshotFromUserAuth(userAuth);
