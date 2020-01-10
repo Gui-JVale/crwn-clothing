@@ -24,8 +24,8 @@ const App = ({ checkUserSession, currentUser }) =>{
   return (
     <div>
       <Header/>
-      <Switch>
-        <Suspense fallback={<Spinner/>}>
+      <Suspense fallback={<Spinner/>}>
+        <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/shop" component={ShopPage} />
           <Route exact path="/checkout" component={CheckoutPage} />
@@ -40,8 +40,8 @@ const App = ({ checkUserSession, currentUser }) =>{
               )
             } 
           />
-        </Suspense>
-      </Switch>
+        </Switch>
+      </Suspense>
     </div>
   )
 };
