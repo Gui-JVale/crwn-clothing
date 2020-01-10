@@ -9,6 +9,10 @@
     margin: 0 7.5px 15px
     overflow: hidden
 
+    @media screen and (max-width: 800px) 
+        height: 200px 
+
+
     &:hover
         cursor: pointer
 
@@ -22,9 +26,12 @@
 
     &.large 
         height: 380px
+        
+        @media screen and (max-width: 800px) 
+            height: 200px 
 
     &:first-child
-        margin-rigth: 7.5px
+        margin-right: 7.5px
 
     &last-child
         margin-left: 7.5px;
